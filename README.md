@@ -23,9 +23,8 @@ Sending information to a MQTT broker is supported, as well as uploading informat
 
 ## Connecting hardware
 The RS485 connector on the inverter is located at the bottom of the inverter. It is hidden behind a small metal plate.
-There will be two (2) RJ11, 4 pin sockets. Only one RJ11 (left) is required and the pinout is as follows:
+There will be two (2) RJ11, 4 pin sockets. Only one RJ11 (left) is required and the pinout is as follows (left to right):
 
-(From left to right)
 Pin | Function
 --- | ---
 1 | TX+
