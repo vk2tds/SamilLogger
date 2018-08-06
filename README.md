@@ -26,15 +26,19 @@ The RS485 connector on the inverter is located at the bottom of the inverter. It
 There will be two (2) RJ11, 4 pin sockets. Only one RJ11 (left) is required and the pinout is as follows:
 
 (From left to right)
-1 TX+
-2 TX- 
-3 RX+
-4 RX-
+Pin | Function
+--- | ---
+1 | TX+
+2 | TX-
+3 | RX+
+4 | RX-
 
 Connection from the TTL-RS485 module:
 
-A+ - Join TX+ and RX+
-B- - Join TX- and RX-
+TTL RS485 | Connection
+--- | ---
+A+ | TX+ and RX+
+B+ | TX- and RX-
 
 ***Other models might use a different method of connecting. Consult your inverter manual.***
 
