@@ -53,7 +53,7 @@ VCC | 5V / 3V3
 *(`D1` (receive) and `D2` (transmit) can be configured to different pins in `Settings.h`)*. It might look weird to connect `RXD` of the module to the receive pin of the ESP8266, but this is how the RS485 converter is labeled.
 
 ## MQTT
-Subscribe to the `goodwe/` topic in your MQTT client. Information will be posted there and will look like this:
+Subscribe to the `samil/` topic in your MQTT client. Information will be posted there and will look like this:
 ```
 samil/93600DVA295R148/vpv1 242.6
 samil/93600DVA295R148/vpv2 235.7
