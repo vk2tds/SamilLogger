@@ -1,7 +1,7 @@
-# Samil Solar inverter logger based on ESP8266 - fork of https://github.com/jantenhove/GoodWeLogger
+# Samil Solar inverter logger based on ESP8266
 
 This ESP8266 firmware enables you to read information from a Samil solar inverter through it's RS485 bus.
-Sending information to a MQTT broker is supported, as well as uploading information to [PVoutput](https://pvoutput.org/).
+Sending information to a MQTT broker is supported, as well as uploading information to [PVoutput](https://pvoutput.org/). This is a fork of https://github.com/jantenhove/GoodWeLogger
 
 ## Requirements
   - Samil inverter with RS485 connector
