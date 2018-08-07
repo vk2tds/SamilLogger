@@ -195,11 +195,12 @@ void SamilCommunicator::parseIncomingData(char incomingDataLength) //
 		Serial.print(". ");
 		debugPrintHex(0x55);
 		debugPrintHex(0xAA);
-		for (char cnt = 0; cnt < incomingDataLength; cnt++)
+		for (char cnt = 0; cnt < incomingDataLength; cnt++){
 			Serial.print("(");
 			Serial.print(cnt);
 			Serial.print(")");
 			debugPrintHex(inputBuffer[cnt]);
+		}
 		Serial.println(".");
 	}
 
