@@ -432,7 +432,7 @@ void SamilCommunicator::sendAllocateRegisterAddress(char * serialNumber, char ad
 	memcpy(RegisterData, serialNumber, 10);
 	RegisterData[10] = address;
 	//need to send alloc msg
-	sendData(0x00, 0x01, 0x01, 11, RegisterData);
+	sendData(0x00, 0x00, 0x01, 11, RegisterData);
 }
 
 //void SamilCommunicator::sendRemoveRegistration(char address)
