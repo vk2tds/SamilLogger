@@ -224,17 +224,17 @@ void SamilCommunicator::parseIncomingData(char incomingDataLength) //
 		Serial.println("CRC match.");
 	
 //Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
-//                                            0    1   2   3   4   5   6   7    8   9   10    11   12   13   14   15   16  17    18
+//                                                     0    1   2   3   4   5   6   7    8   9   10    11   12   13   14   15   16  17    18
 //Parsing incoming data with length: 0x13 . 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x80 0xA 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x3 0xA2 .
 //CRC received: 0x3 0xA2 , calculated CRC: 0x3 0xA2 .
 //CRC match.
 	
 	//check the control code and function code to see what to do
-	if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x00 &&
-	    inputBuffer[4] == 0x00 && inputBuffer[5] == 0x00 &&	    
-	    inputBuffer[6] == 0x00 &&
-	    inputBuffer[7] == 0x80 &&
-	    inputBuffer[8] == 0x0A){
+	if (
+	    inputBuffer[2] == 0x00 && inputBuffer[3] == 0x00 &&	    
+	    inputBuffer[4] == 0x00 &&
+	    inputBuffer[5] == 0x80 &&
+	    inputBuffer[86] == 0x0A){
 		if (debugMode)
 			Serial.println("Handle Registration.");
 		handleRegistration(inputBuffer + 9, 10);
