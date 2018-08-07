@@ -234,18 +234,30 @@ void SamilCommunicator::parseIncomingData(char incomingDataLength) //
 	    inputBuffer[4] == 0x00 && inputBuffer[5] == 0x00 &&	    
 	    inputBuffer[6] == 0x00 &&
 	    inputBuffer[7] == 0x80 &&
-	    inputBuffer[8] == 0x0A)
+	    inputBuffer[8] == 0x0A){
+		if (debugMode)
+			Serial.println("Handle Registration.");
 		handleRegistration(inputBuffer + 9, 10);
-	else if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x81)
+	
+	} else if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x81){
+		if (debugMode)
+			Serial.println("Handle RegistrationConfirmation.");
 		handleRegistrationConfirmation(inputBuffer[0]);
-	else if (inputBuffer[2] == 0x01 && inputBuffer[3] == 0x81)
+	} else if (inputBuffer[2] == 0x01 && inputBuffer[3] == 0x81){
+		if (debugMode)
+			Serial.println("Handle Information.");
 		handleIncomingInformation(inputBuffer[0], inputBuffer[4], inputBuffer + 5);
+
+	}
 }
 
 void SamilCommunicator::handleRegistration(char * serialNumber, char length)
 {
 	//check if the serialnumber isn't listed yet. If it is use that one
 	//Add the serialnumber, generate an address and send it to the inverter
+	if (debugMode)
+		Serial.println("Handle Registration inside.");
+
 	if (length != 10)
 		return;
 
@@ -263,6 +275,8 @@ void SamilCommunicator::handleRegistration(char * serialNumber, char length)
 			return;
 		}
 	}
+	if (debugMode)
+		Serial.println("New Inverter.");
 
 	//still here. This a new inverter
 	SamilCommunicator::SamilInverterInformation newInverter;
