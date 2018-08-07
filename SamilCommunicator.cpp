@@ -223,9 +223,19 @@ void SamilCommunicator::parseIncomingData(char incomingDataLength) //
 	if (debugMode)
 		Serial.println("CRC match.");
 	
+//Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+//                                            0    1   2   3   4   5   6   7    8   9   10    11   12   13   14   15   16  17    18
+//Parsing incoming data with length: 0x13 . 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x80 0xA 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x3 0xA2 .
+//CRC received: 0x3 0xA2 , calculated CRC: 0x3 0xA2 .
+//CRC match.
+	
 	//check the control code and function code to see what to do
-	if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x80)
-		handleRegistration(inputBuffer + 5, 16);
+	if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x00 &&
+	    inputBuffer[4] == 0x00 && inputBuffer[5] == 0x00 &&	    
+	    inputBuffer[6] == 0x00 &&
+	    inputBuffer[7] == 0x80 &&
+	    inputBuffer[8] == 0x0A)
+		handleRegistration(inputBuffer + 9, 10);
 	else if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x81)
 		handleRegistrationConfirmation(inputBuffer[0]);
 	else if (inputBuffer[2] == 0x01 && inputBuffer[3] == 0x81)
@@ -236,13 +246,13 @@ void SamilCommunicator::handleRegistration(char * serialNumber, char length)
 {
 	//check if the serialnumber isn't listed yet. If it is use that one
 	//Add the serialnumber, generate an address and send it to the inverter
-	if (length != 16)
+	if (length != 10)
 		return;
 
 	for (char index = 0; index < inverters.size(); ++index)
 	{
 		//check inverter 
-		if (memcmp(inverters[index].serialNumber, serialNumber, 16) == 0)
+		if (memcmp(inverters[index].serialNumber, serialNumber, 10) == 0)
 		{
 			Serial.print("Already registered inverter reregistered with address: ");
 			Serial.println((short)inverters[index].address);
@@ -259,8 +269,8 @@ void SamilCommunicator::handleRegistration(char * serialNumber, char length)
 	newInverter.addressConfirmed = false;
 	newInverter.lastSeen = millis();
 	newInverter.isDTSeries = false; //TODO. Determine if DT series inverter by getting info
-	memset(newInverter.serialNumber, 0, 17);
-	memcpy(newInverter.serialNumber, serialNumber, 16);
+	memset(newInverter.serialNumber, 0, 11);
+	memcpy(newInverter.serialNumber, serialNumber, 10);
 	//get the new address. Add one (overflows at 255) and check if not in use
 	lastUsedAddress++;
 	while (getInverterInfoByAddress(lastUsedAddress) != nullptr)
@@ -404,11 +414,11 @@ void SamilCommunicator::sendAllocateRegisterAddress(char * serialNumber, char ad
 	}
 
 	//create our registrationpacket with serialnumber and address and send it over
-	char RegisterData[17];
-	memcpy(RegisterData, serialNumber, 16);
-	RegisterData[16] = address;
+	char RegisterData[11];
+	memcpy(RegisterData, serialNumber, 10);
+	RegisterData[10] = address;
 	//need to send alloc msg
-	sendData(0x00, 0x01, 0x01, 17, RegisterData);
+	sendData(0x00, 0x01, 0x01, 11, RegisterData);
 }
 
 //void SamilCommunicator::sendRemoveRegistration(char address)
