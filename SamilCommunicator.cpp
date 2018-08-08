@@ -236,8 +236,8 @@ void SamilCommunicator::parseIncomingData(char incomingDataLength) //
 	    inputBuffer[5] == 0x80 &&
 	    inputBuffer[6] == 0x0A){
 		if (debugMode)
-			Serial.println("Handle Registration.");
-		handleRegistration(inputBuffer + 9, 10);
+			Serial.println("Handle Registration.");			
+		handleRegistration(inputBuffer + 7, 10);
 	
 	} else if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x81){
 		if (debugMode)
@@ -255,9 +255,14 @@ void SamilCommunicator::handleRegistration(char * serialNumber, char length)
 {
 	//check if the serialnumber isn't listed yet. If it is use that one
 	//Add the serialnumber, generate an address and send it to the inverter
-	if (debugMode)
+	if (debugMode){
 		Serial.println("Handle Registration inside.");
-
+		
+		WRITE SOME CODE HERE TO PRINT OUT THE SERIAL NUMBER
+		HINT... serialNumber[i] where i is from 0 to (9 or 10)
+		Print it in hex
+	
+	}
 	if (length != 10)
 		return;
 
@@ -300,7 +305,7 @@ void SamilCommunicator::handleRegistration(char * serialNumber, char length)
 	sendAllocateRegisterAddress(serialNumber, lastUsedAddress);
 }
 
-void SamilCommunicator::handleRegistrationConfirmation(char address)
+void SamilCommunicator::handleregistrationConfirmation(char address)
 {
 	if (debugMode)
 	{
