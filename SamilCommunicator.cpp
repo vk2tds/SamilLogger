@@ -405,7 +405,7 @@ void SamilCommunicator::askAllInvertersForInformation()
 
 void SamilCommunicator::askInverterForInformation(char address)
 {
-	sendData(address, 0x00, 0x00, 0, nullptr);
+	sendData(address, 0x01, 0x00, 0, nullptr);
 }
 
 SamilCommunicator::SamilInverterInformation *  SamilCommunicator::getInverterInfoByAddress(char address)
