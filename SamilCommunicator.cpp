@@ -237,7 +237,7 @@ void SamilCommunicator::parseIncomingData(char incomingDataLength) //
 	    inputBuffer[6] == 0x0A){
 		if (debugMode)
 			Serial.println("Handle Registration.");
-		handleRegistration(inputBuffer + 9, 10);
+		handleRegistration(inputBuffer + 7, 10);
 	
 	} else if (inputBuffer[2] == 0x00 && inputBuffer[3] == 0x81){
 		if (debugMode)
