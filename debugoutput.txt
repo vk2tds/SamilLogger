@@ -1,0 +1,568 @@
+1384, room 16 
+tail 8
+chksum Booting
+Connecting to WiFi....
+Connected!
+Ready
+IP address: 
+192.168.0.142
+Samil Communicator started.
+MQTT enabled. Connecting.
+Attempting MQTT connection to server: 192.168.0.201...
+Using user credientials for authentication.
+connected
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+PVOutputPublisher started.
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+Parsing incoming data with length: 0x13 . 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x80 0xA 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x3 0xA2 .
+CRC received: 0x3 0xA2 , calculated CRC: 0x3 0xA2 .
+CRC match.
+Handle Registration.
+Handle Registration inside.
+New Inverter.
+New inverter found. Current # registrations: 1
+SendAllocateRegisterAddress address: 1
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x1 0xB 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x1 CRC high/low: 0x3 0x25 .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Marking inverter @ address: 1offline.
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Parsing incoming data with length: 0x13 . 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x80 0xA 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x3 0xA2 .
+CRC received: 0x3 0xA2 , calculated CRC: 0x3 0xA2 .
+CRC match.
+Handle Registration.
+Handle Registration inside.
+Already registered inverter reregistered with address: 1
+SendAllocateRegisterAddress address: 1
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x1 0xB 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x1 CRC high/low: 0x3 0x25 .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+sd lܟ< ⸮l⸮<⸮l⸮#|⸮⸮⸮⸮r⸮#⸮c⸮⸮'o⸮do'⸮⸮⸮cp⸮⸮dsdrl8⸮o⸮⸮$⸮⸮b'⸮|$⸮⸮b⸮⸮og⸮ l⸮⸮l`⸮g'l`orǛ⸮'c⸮d{⸮⸮ob⸮$⸮⸮dǜ⸮p⸮⸮d`⸮⸮'⸮Booting
+Connecting to WiFi...
+Connected!
+Ready
+IP address: 
+192.168.0.142
+Samil Communicator started.
+MQTT enabled. Connecting.
+Attempting MQTT connection to server: 192.168.0.201...
+Using user credientials for authentication.
+connected
+MQTT send status: 1
+PVOutputPublisher started.
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+Parsing incoming data with length: 0x13 . 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x80 0xA 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x3 0xA2 .
+CRC received: 0x3 0xA2 , calculated CRC: 0x3 0xA2 .
+CRC match.
+Handle Registration.
+Handle Registration inside.
+New Inverter.
+New inverter found. Current # registrations: 1
+SendAllocateRegisterAddress address: 1
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x1 0xB 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x1 CRC high/low: 0x3 0x25 .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+Parsing incoming data with length: 0x13 . 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x80 0xA 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x3 0xA2 .
+CRC received: 0x3 0xA2 , calculated CRC: 0x3 0xA2 .
+CRC match.
+Handle Registration.
+Handle Registration inside.
+Already registered inverter reregistered with address: 1
+SendAllocateRegisterAddress address: 1
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x1 0xB 0x53 0x32 0x32 0x31 0x31 0x35 0x31 0x34 0x31 0x35 0x1 CRC high/low: 0x3 0x25 .
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 1.
+MQTT send status: 1
+Sending discovery
+Sending data to inverter(s): 0x55 0xAA 0x0 0x0 0x0 0x0 0x0 0x0 0x0 CRC high/low: 0x0 0xFF .
+MQTT send status: 1
+Marking inverter @ address: 1offline.
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT send status: 1
+Now asking inverter with address: 1 for information. Addressconfirmed: 0, isOnline: 0.
+MQTT sen
