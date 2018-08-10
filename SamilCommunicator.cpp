@@ -1,5 +1,17 @@
 #include "SamilCommunicator.h"
 
+//
+//
+// Sequence
+//
+// Send sendData(0x00, 0x00, 0x00, 0x00, nullptr); sendDiscovery
+// Get (0x00 0x80 0x0B) handleRegistration -> sendAllocateRegisterAddress
+// Send sendData(0x00, 0x00, 0x01, 11, RegisterData); sendAllocateRegisterAddress
+// Get (0x00 0x81) handleRegistrationConfirmation
+// Send sendData(address, 0x01, 0x00, 0, nullptr); askInverterForInformation
+// Get (0x01 0x81) handleIncomingInformation
+
+// Protocol http://www.radio-active.net.au/images/files/Samil%20Inverter.pdf
 
 SamilCommunicator::SamilCommunicator(SettingsManager * settingsMan, bool inDebug)
 {
@@ -405,7 +417,9 @@ void SamilCommunicator::askAllInvertersForInformation()
 
 void SamilCommunicator::askInverterForInformation(char address)
 {
-	sendData(address, 0x01, 0x00, 0, nullptr);
+//	Pretty sure this is wrong for the inverter... 	
+//	sendData(address, 0x01, 0x00, 0, nullptr);
+	sendData(address, 0x01, 0x02, 0, nullptr);
 }
 
 SamilCommunicator::SamilInverterInformation *  SamilCommunicator::getInverterInfoByAddress(char address)
