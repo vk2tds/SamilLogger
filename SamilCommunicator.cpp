@@ -116,7 +116,7 @@ void SamilCommunicator::checkOfflineInverters()
 				{
 					Serial.print("Marking inverter @ address: ");
 					Serial.print((short)inverters[index].address);
-					Serial.println("offline.");
+					Serial.println(" offline.");
 				}
 
 //				sendRemoveRegistration(inverters[index].address); //send in case the inverter thinks we are online
@@ -391,11 +391,11 @@ void SamilCommunicator::askAllInvertersForInformation()
 		{
 			if (debugMode)
 			{
-				Serial.print("Not asking inverter with address: ");
+				Serial.print("Now asking inverter with address: ");
 				Serial.print((short)inverters[index].address);
 				Serial.print(" for information. Addressconfirmed: ");
 				Serial.print((short)inverters[index].addressConfirmed);
-				Serial.print(", isOnline: ");
+				Serial.print(", is Online: ");
 				Serial.print((short)inverters[index].isOnline);
 				Serial.println(".");
 			}
