@@ -103,5 +103,5 @@ private:
 	void askInverterForInformation(char address);
 	SamilCommunicator::SamilInverterInformation * getInverterInfoByAddress(char address);
 	void sendAllocateRegisterAddress(char * serialNumber, char Address);
-	//void sendRemoveRegistration(char address);
+	void sendRemoveRegistration(char address);
 };
