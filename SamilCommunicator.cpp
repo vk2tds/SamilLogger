@@ -4,11 +4,11 @@
 //
 // Sequence
 //
-// Send sendData(0x00, 0x00, 0x00, 0x00, nullptr); sendDiscovery
+// State 1: Send sendData(0x00, 0x00, 0x00, 0x00, nullptr); sendDiscovery
 // Get (0x00 0x80 0x0B) handleRegistration -> sendAllocateRegisterAddress
-// Send sendData(0x00, 0x00, 0x01, 11, RegisterData); sendAllocateRegisterAddress
+// State 2: Send sendData(0x00, 0x00, 0x01, 11, RegisterData); sendAllocateRegisterAddress
 // Get (0x00 0x81) handleRegistrationConfirmation
-// Send sendData(address, 0x01, 0x00, 0, nullptr); askInverterForInformation
+// State 3: Send sendData(address, 0x01, 0x00, 0, nullptr); askInverterForInformation
 // Get (0x01 0x81) handleIncomingInformation
 
 // Protocol http://www.radio-active.net.au/images/files/Samil%20Inverter.pdf
@@ -54,7 +54,7 @@ void SamilCommunicator::stop()
 int SamilCommunicator::sendData(unsigned int address, char controlCode, char functionCode, char dataLength, char * data)
 {
   if (debugMode)
-    Serial.write("Sending data to inverter(s): ");
+    Serial.write("sendData: Sending data to inverter(s): ");
   //send the header first
   headerBuffer[4] = address >> 8;
   headerBuffer[5] = address & 0xFF;
@@ -108,7 +108,7 @@ void SamilCommunicator::sendDiscovery()
 {
   //send out discovery for unregistered devices.
   if(debugMode)
-    Serial.println("Sending discovery");
+    Serial.println("State 1: sendDiscovery: Sending discovery");
   sendData(0x00, 0x00, 0x00, 0x00, nullptr);
 }
 
@@ -202,7 +202,7 @@ void SamilCommunicator::parseIncomingData(char incomingDataLength) //
   //incomingDataLength also has the crc data in it
   if (debugMode)
   {
-    Serial.print("Parsing incoming data with length: ");
+    Serial.print("parseIncomingData: Parsing incoming data with length: ");
     debugPrintHex(incomingDataLength);
     Serial.print(". ");
     debugPrintHex(0x55);
@@ -268,7 +268,7 @@ void SamilCommunicator::handleRegistration(char * serialNumber, char length)
   //check if the serialnumber isn't listed yet. If it is use that one
   //Add the serialnumber, generate an address and send it to the inverter
   if (debugMode)
-    Serial.println("Handle Registration inside.");
+    Serial.println("handleRegistration: Handle Registration inside.");
 
   if (length != 10)
     return;
@@ -316,7 +316,7 @@ void SamilCommunicator::handleRegistrationConfirmation(char address)
 {
   if (debugMode)
   {
-    Serial.print("Handling registration information for address: ");
+    Serial.print("handleRegistrationConfirmation: Handling registration information for address: ");
     Serial.println((short)address);
   }
   //lookup the inverter and set it to confirmed
@@ -345,6 +345,8 @@ void SamilCommunicator::handleRegistrationConfirmation(char address)
 
 void SamilCommunicator::handleIncomingInformation(char address, char dataLength, char * data)
 {
+   if (debugMode)
+    Serial.write("handleIncomingInformation ");
   //need to parse the information and update our struct
   //parse all pairs of two bytes and output them
   auto inverter = getInverterInfoByAddress(address);
@@ -417,6 +419,8 @@ void SamilCommunicator::askAllInvertersForInformation()
 
 void SamilCommunicator::askInverterForInformation(char address)
 {
+    if (debugMode)
+      Serial.write("State 3: askInverterForInformation: ");
 //  Pretty sure this is wrong for the inverter...   
 //  sendData(address, 0x01, 0x00, 0, nullptr);
   sendData(address, 0x01, 0x02, 0, nullptr);
@@ -437,7 +441,7 @@ void SamilCommunicator::sendAllocateRegisterAddress(char * serialNumber, char ad
 {
   if (debugMode)
   {
-    Serial.print("SendAllocateRegisterAddress address: ");
+    Serial.print("State 2: SendAllocateRegisterAddress: address: ");
     Serial.println((short)address);
   }
 
@@ -451,6 +455,8 @@ void SamilCommunicator::sendAllocateRegisterAddress(char * serialNumber, char ad
 
 void SamilCommunicator::sendRemoveRegistration(char address)
 {
+      if (debugMode)
+    Serial.write("sendRemoveRegistration");
   //send out the remove address to the inverter. If the inverter is still connected it will reconnect after discovery
   sendData(address, 0x00, 0x04, 0, nullptr);
 }
