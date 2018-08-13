@@ -107,6 +107,12 @@ void SamilCommunicator::debugPrintHex(char bt)
 void SamilCommunicator::sendDiscovery()
 {
   //send out discovery for unregistered devices.
+  // Should send 55aa000000000004000103
+  if(debugMode)
+    Serial.println("State 0: sendDiscovery: init Inverter");
+  sendData (0x00, 0x00, 0x04, 0x00, nullptr)
+  delay (100); // hack... Lets see if this works first...  
+  
   if(debugMode)
     Serial.println("State 1: sendDiscovery: Sending discovery");
   sendData(0x00, 0x00, 0x00, 0x00, nullptr);
